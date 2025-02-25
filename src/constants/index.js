@@ -23,6 +23,11 @@ import {
   jobit,
   tripguide,
   threejs,
+  empclaims,
+  devtown,
+  wurklist,
+  steps,
+  immich,
 } from "../assets";
 
 export const navLinks = [
@@ -97,10 +102,6 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
     name: "docker",
     icon: docker,
   },
@@ -108,11 +109,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "FullStack Developer",
+    company_name: "EmpClaims",
+    icon: empclaims,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Feb 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -121,42 +122,16 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Intern",
+    company_name: "Devtown",
+    icon: devtown,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "July 2022 - November 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Gained hands-on experience in developing and maintaining web applications using React.js and related technologies.",
+      "Learned and implemented state management using Redux for efficient data handling.",
+      "Worked with backend technologies like Node.js, Express.js, and MongoDB to build full-stack applications",
+      "Implemented responsive design principles and ensured cross-browser compatibility for a seamless user experience.",
     ],
   },
 ];
@@ -190,9 +165,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Automation Manager",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to run /schedule the automation, keep track of the automation and data both, visualize the data ",
     tags: [
       {
         name: "react",
@@ -203,45 +178,46 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Node",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: wurklist,
+    source_code_link: "https://empclaims.wurklist.com/login",
   },
   {
-    name: "Job IT",
+    name: "Steps From empclaims ",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web extension which checks eligiblity for us client while running automation using chrom api and dom manipulation",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Node",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "SQL",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: steps,
+    source_code_link:
+      "https://chromewebstore.google.com/detail/steps-from-empclaims/edcgnmadmmoofaojicemjocfhpochjmh?pli=1",
   },
   {
-    name: "Trip Guide",
+    name: "Open soucrce Contribution",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Immich app and start backing up your photos and videos securely to your own server",
     tags: [
       {
-        name: "nextjs",
+        name: "Svelte",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Typecript",
         color: "green-text-gradient",
       },
       {
@@ -249,8 +225,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: immich,
+    source_code_link: "https://github.com/immich-app/immich/pull/12959",
   },
 ];
 

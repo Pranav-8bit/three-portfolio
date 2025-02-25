@@ -6,6 +6,11 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import empclaims from "./empclaims.jpg";
+import devtown from "./devtown.jpg";
+import wurklist from "./wurklist.png";
+import steps from "./steps.png";
+import immich from "./immich.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -59,4 +64,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  empclaims,
+  devtown,
+  wurklist,
+  steps,
+  immich,
 };
