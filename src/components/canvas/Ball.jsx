@@ -7,11 +7,10 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
-
 import CanvasLoader from "../Loader";
 
-const Ball = (props) => {
-  const [decal] = useTexture([props.imgUrl]);
+const Ball = ({ imgUrl }) => {
+  const [decal] = useTexture([imgUrl]); // Call the hook directly at the top level
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -39,15 +38,11 @@ const Ball = (props) => {
 
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas
-      frameloop="demand"
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}>
+    <Canvas dpr={[1, 1.5]} gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} />
+        <OrbitControls enableZoom={false} enableDamping dampingFactor={0.1} />
         <Ball imgUrl={icon} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );
